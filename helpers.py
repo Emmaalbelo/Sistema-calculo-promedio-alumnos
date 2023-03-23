@@ -30,5 +30,10 @@ def dni_valido(dni, lista):
             return False
     return True
 
+#Calculo de promedio de los estudiantes
+def calculate_average(nota_1er_semestre, nota_2do_semestre):
+    avg = sum([nota_1er_semestre, nota_2do_semestre]) / 2
+    return avg
+
 
 
