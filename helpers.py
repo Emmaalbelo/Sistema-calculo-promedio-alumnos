@@ -35,5 +35,11 @@ def calculate_average(nota_1er_semestre, nota_2do_semestre):
     avg = sum([nota_1er_semestre, nota_2do_semestre]) / 2
     return avg
 
+#Asignar la tecla "ENTER" a un button
+def bind_enter_to_button(widget, button):
+    def callback(event):
+        button.invoke()
+    widget.bind("<Return>", callback)
+
 
 

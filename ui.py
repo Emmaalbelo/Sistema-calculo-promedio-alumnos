@@ -279,7 +279,7 @@ class MainWindow(Tk, CenterWidgetMixin):
         for alumno in db.Alumnos.lista:
             treeview.insert(
                 parent= "", index= "end", iid= alumno.dni,
-                values= (alumno.dni, alumno.nombre, alumno.apellido, alumno.nota_1er_semestre, alumno.nota_2do_semestre, alumno.averange))
+                values= (alumno.dni, alumno.nombre, alumno.apellido, alumno.nota_1er_semestre, alumno.nota_2do_semestre))
         
         treeview.pack()
         
